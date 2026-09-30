@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunday Grove – Orange juice, pressed this morning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#dcf0f5; --juice:#ff8a00; --peel:#ffb627; --deep:#0e3a4a; --white:#fbfeff;
+  --ink:#0e3a4a; --bg:#fbfeff; --muted:#4b6b77;
+  --display:'Bricolage Grotesque','Arial Black',system-ui,sans-serif;
+  --body:'Instrument Sans',system-ui,-apple-system,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#fbfeff}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:auto}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.55}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);line-height:.98;letter-spacing:-.02em;margin:0}
+
+nav{position:absolute;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:20px clamp(20px,5vw,56px)}
+.logo{font-family:var(--display);font-weight:800;font-size:1.3rem;text-decoration:none;letter-spacing:-.02em}
+nav a.btn{padding:10px 18px;font-size:.95rem}
+.btn{display:inline-block;background:var(--deep);color:#fff;text-decoration:none;font-weight:600;padding:15px 26px;border-radius:999px;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:#0a2b38}
+.btn.orange{background:var(--juice);color:var(--deep)}
